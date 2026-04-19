@@ -49,7 +49,7 @@ st.markdown("""
 # Chargement des modeles entrainés
 @st.cache_resource
 def charger_modeles():
-    with open("modeles.pkl", "rb") as f:
+    with open("modeles.pkl.gz", "rb") as f:
         return pickle.load(f)
 
 donnees_modeles = charger_modeles()
